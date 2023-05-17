@@ -14,10 +14,7 @@ return new class extends Migration
         Schema::create('people', function (Blueprint $table) {
             $table->id();
             $table->string("name");
-            $table->string("second_name");
             $table->string("surname");
-            $table->string("gender");
-            $table->string("age");
             $table->string("phone_number");
             $table->string("street");
             $table->string("city");
@@ -34,3 +31,4 @@ return new class extends Migration
         Schema::dropIfExists('people');
     }
 };
+
